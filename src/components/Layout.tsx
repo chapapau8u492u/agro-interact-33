@@ -44,21 +44,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`flex items-center space-x-2 text-sm font-medium transition-colors hover:text-primary ${
+                  className={`flex items-center space-x-1 lg:space-x-2 text-sm font-medium transition-colors hover:text-primary ${
                     isActive(item.href) 
                       ? "text-primary border-b-2 border-primary pb-1" 
                       : "text-muted-foreground"
                   }`}
                 >
                   <Icon className="h-4 w-4" />
-                  <span>{item.name}</span>
+                  <span className="hidden lg:inline">{item.name}</span>
                 </Link>
               );
             })}
@@ -104,8 +104,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Footer */}
       <footer className="border-t bg-muted/30">
-        <div className="container py-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="container py-6 md:py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="flex h-6 w-6 items-center justify-center rounded bg-gradient-primary">

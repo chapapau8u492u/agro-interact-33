@@ -83,42 +83,42 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container px-6 py-24 md:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container px-4 sm:px-6 py-16 sm:py-24 md:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
-          <div className="text-white space-y-8">
-            <div className="space-y-4">
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+          <div className="text-white space-y-6 sm:space-y-8">
+            <div className="space-y-3 sm:space-y-4">
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-xs sm:text-sm">
                 <Sparkles className="w-3 h-3 mr-1" />
                 Smart India Hackathon 2024
               </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Empowering Farmers with
                 <span className="block text-primary-glow">AI Technology</span>
               </h1>
-              <p className="text-xl text-white/90 max-w-2xl">
+              <p className="text-base sm:text-lg lg:text-xl text-white/90 max-w-2xl">
                 Revolutionizing agriculture through AI-powered disease detection, 
                 smart weather monitoring, and intelligent farming solutions. Your digital farming companion.
               </p>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
-                size="xl" 
+                size="lg" 
                 variant="hero" 
                 onClick={startDemo}
-                className="group"
+                className="group w-full sm:w-auto"
               >
-                {isPlaying ? <Pause className="w-5 h-5 mr-2" /> : <Play className="w-5 h-5 mr-2" />}
+                {isPlaying ? <Pause className="w-4 h-4 sm:w-5 sm:h-5 mr-2" /> : <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />}
                 {isPlaying ? "Demo Running..." : "Start Demo"}
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
-                size="xl" 
+                size="lg" 
                 variant="outline" 
-                className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+                className="bg-white/10 border-white/30 text-white hover:bg-white/20 w-full sm:w-auto"
                 onClick={() => navigate("/disease-detection")}
               >
                 Try Disease Detection
@@ -126,26 +126,26 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 sm:pt-8">
               <div className="text-center">
-                <div className="text-2xl font-bold">10K+</div>
-                <div className="text-sm text-white/80">Farmers Helped</div>
+                <div className="text-xl sm:text-2xl font-bold">10K+</div>
+                <div className="text-xs sm:text-sm text-white/80">Farmers Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">95%</div>
-                <div className="text-sm text-white/80">Accuracy Rate</div>
+                <div className="text-xl sm:text-2xl font-bold">95%</div>
+                <div className="text-xs sm:text-sm text-white/80">Accuracy Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">24/7</div>
-                <div className="text-sm text-white/80">AI Support</div>
+                <div className="text-xl sm:text-2xl font-bold">24/7</div>
+                <div className="text-xs sm:text-sm text-white/80">AI Support</div>
               </div>
             </div>
           </div>
 
           {/* Voice Interface Card */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-8 lg:mt-0">
             <Card className="w-full max-w-md bg-white/95 backdrop-blur shadow-2xl">
-              <CardContent className="p-8 space-y-6">
+              <CardContent className="p-6 sm:p-8 space-y-4 sm:space-y-6">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-2">Voice Assistant</h3>
                   <p className="text-muted-foreground text-sm">
