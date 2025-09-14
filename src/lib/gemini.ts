@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const API_KEY = 'AIzaSyBmE7h85j2gCHUuqtkofhZcjtRYwN-8O78';
+const API_KEY = 'AIzaSyCtkK9Q2te8OkCOoxH6FCppk_0ng4kmK2s';
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export interface AICropAnalysis {
